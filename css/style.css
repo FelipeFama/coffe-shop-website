@@ -1,0 +1,188 @@
+/*Global tags*/
+:root {
+  --khaki: #f0e68c;
+  --tomato: #ff6347;
+  --mediumblue: #0000cd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Readex Pro', 'sans-serif';
+  text-decoration: none;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.4%;
+  background-color: var(--tomato);
+}
+
+header a h1 {
+  color: var(--mediumblue);
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+/*container*/
+.container {
+  width: 100%;
+  height: 95vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #ddd, #eee, #ddd);
+}
+
+/*form*/
+.container form {
+  background: var(--khaki);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-top: 5%;
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 2px solid black;
+}
+
+.container form label {
+  color: var(--mediumblue);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.container form input {
+  border: 0;
+  outline: 0;
+  padding: 2%;
+  margin: 5% 0px;
+  font-size: 1.5rem;
+  width: 45%;
+  font-weight: 300;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container form input :focus {
+  box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container form button {
+  cursor: pointer;
+  padding: 3%;
+  margin-top: 3%;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: var(--tomato);
+  color: var(--khaki);
+  transition: 0.3s ease-in-out;
+}
+
+.container form button:hover {
+  color: var(--tomato);
+  background: var(--mediumblue);
+}
+
+/*section*/
+.container .result-box {
+  margin-top: 5%;
+  padding: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  background: var(--mediumblue);
+  color: var(--khaki);
+}
+
+.container .result-box h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container .result-box span {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+/*Button*/
+
+.container #btnRestart {
+  cursor: pointer;
+  margin-top: 2%;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 2%;
+  border-radius: 1rem;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: var(--tomato);
+  background: var(--khaki);
+  transition: 0.3s ease-in-out;
+  display: none;
+}
+
+.container #btnRestart:hover {
+  color: var(--khaki);
+  background: var(--tomato);
+}
+
+/*footer*/
+footer {
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  color: var(--tomato);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .container {
+    padding: 1%;
+    text-align: center;
+  }
+  .container form label {
+    margin-bottom: 3%;
+  }
+  .container form input {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header a h1 {
+    font-size: 2.5rem;
+  }
+  .container form {
+    width: 50%;
+    text-align: center;
+  }
+  .container form input {
+    font-size: 0.5rem;
+  }
+  .container .result-box {
+    width: 40%;
+  }
+}
