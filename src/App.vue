@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section></section>
+  <section>hello vue</section>
 </template>
