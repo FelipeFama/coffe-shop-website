@@ -17,6 +17,19 @@
         <FaBandsPinterest />
       </a>
     </aside>
+    <aside class="links">
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">menu</a>
+      <a href="#">products</a>
+      <a href="#">review</a>
+      <a href="#">contact</a>
+      <a href="#">blogs</a>
+    </aside>
+    <aside class="credit">
+      created by <span>felipe fama</span> | rights reserved for
+      <span>mr. web designer</span>
+    </aside>
   </footer>
 </template>
 
