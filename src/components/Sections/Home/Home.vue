@@ -1,4 +1,5 @@
 <template>
+  <!-- home section -->
   <section class="home" id="home">
     <article class="content">
       <h3>fresh coffee in the morning</h3>
