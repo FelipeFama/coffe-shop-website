@@ -19,5 +19,10 @@
     margin: 0 1rem;
     font-size: 1.6rem;
     color: $white;
+    &:hover {
+      color: $main-color;
+      border-bottom: 0.1rem solid $main-color;
+      padding-bottom: 0.5rem;
+    }
   }
 }
