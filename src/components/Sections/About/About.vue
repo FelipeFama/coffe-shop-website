@@ -19,7 +19,7 @@
           inventore nisi tempora consequuntur corporis accusantium veritatis
           consequatur dolorum illum culpa?
         </p>
-        <SectionButtons />
+        <SectionButtons label="Learn More" />
       </article>
     </div>
   </section>
