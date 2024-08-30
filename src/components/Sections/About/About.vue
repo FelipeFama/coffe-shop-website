@@ -19,10 +19,15 @@
           inventore nisi tempora consequuntur corporis accusantium veritatis
           consequatur dolorum illum culpa?
         </p>
+        <SectionButtons />
       </article>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import SectionButtons from "../../Buttons/SectionButtons/SectionButtons.vue";
+</script>
 
 <style lang="scss" scoped>
 @import "./About.module.scss";

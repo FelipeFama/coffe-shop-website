@@ -1,0 +1,14 @@
+@import "../../../assets/styles/variables.scss";
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: $white;
+  background: $main-color;
+  cursor: pointer;
+  &:hover {
+    letter-spacing: 0.2rem;
+  }
+}
