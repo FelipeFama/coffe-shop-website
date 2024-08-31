@@ -38,3 +38,15 @@ section,
 footer {
   padding: 2rem 7%;
 }
+
+.heading {
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+  span {
+    color: $main-color;
+    text-transform: uppercase;
+  }
+}
