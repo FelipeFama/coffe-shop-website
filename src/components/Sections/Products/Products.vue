@@ -2,8 +2,8 @@
   <!-- products section -->
   <section class="products" id="products">
     <h1 class="heading"><span>our </span>products</h1>
-    <article class="box-container">
-      <div class="box" v-for="(products, index) in products" :key="products.id">
+    <div class="box-container">
+      <article class="box" v-for="(products, index) in products" :key="index">
         <aside class="icons">
           <a href="#">
             <FaCartShopping />
@@ -20,19 +20,21 @@
         </figure>
         <aside class="content">
           <h3>{{ products.title }}</h3>
+          <aside class="stars">
+            <FaStar v-for="n in Math.floor(products.stars)" :key="n" />
+            <FaStarHalfStroke v-if="products.stars % 1 !== 0" />
+          </aside>
+          <aside class="price">
+            ${{ products.price }} <span>${{ products.oldPrice }}</span>
+          </aside>
         </aside>
-        <aside class="stars"></aside>
-        <aside class="price">
-          \${{ products.price }} <span>\${{ products.oldPrice }}</span>
-        </aside>
-      </div>
-    </article>
+      </article>
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { products } from "@/utils";
-import SectionButtons from "../../Buttons/SectionButtons/SectionButtons.vue";
 import {
   FaCartShopping,
   FaHeart,
