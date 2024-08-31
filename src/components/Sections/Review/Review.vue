@@ -4,8 +4,14 @@
     <h1 class="heading"><span>customer's </span>review</h1>
     <div class="box-container">
       <article class="box" v-for="(reviews, index) in reviews" :key="index">
-        <image :src="reviews.quoteImage" :alt="reviews.quoteAlt" />
+        <img :src="reviews.quoteImage" :alt="reviews.quoteAlt" />
         <p>{{ reviews.text }}</p>
+        <img :src="reviews.image" :alt="reviews.alt" />
+        <h3>{{ reviews.title }}</h3>
+        <aside class="stars">
+          <FaStar v-for="n in Math.floor(reviews.stars)" :key="n" />
+          <FaStarHalfStroke v-if="reviews.stars % 1 !== 0" />
+        </aside>
       </article>
     </div>
   </section>
