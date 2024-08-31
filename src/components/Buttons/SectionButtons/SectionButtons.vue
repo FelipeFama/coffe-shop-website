@@ -1,13 +1,22 @@
 <template>
-  <a href="#" class="btn">{{ label }}</a>
+  <a href="#" class="btn">{{ props.label }}</a>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from "vue";
 
-const { label } = defineProps<{
+interface Props {
   label: string;
-}>();
+}
+const props = defineProps<Props>();
+/*
+defineProps({
+  label: {
+    type: String,
+    required: true,
+  },
+});
+*/
 </script>
 
 <style lang="scss" scoped>

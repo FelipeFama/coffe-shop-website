@@ -9,6 +9,7 @@
         <aside class="price">
           {{ item.price }} <span>{{ item.oldPrice }}</span>
         </aside>
+        <SectionButtons :label="item.buttonText" />
       </figcaption>
     </article>
   </section>
@@ -16,6 +17,7 @@
 
 <script setup lang="ts">
 import { menuItems } from "@/utils";
+import SectionButtons from "../../Buttons/SectionButtons/SectionButtons.vue";
 </script>
 
 <style lang="scss" scoped>
