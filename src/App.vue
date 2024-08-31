@@ -5,6 +5,7 @@ import About from "./components/Sections/About/About.vue";
 import Menu from "./components/Sections/Menu/Menu.vue";
 import Products from "./components/Sections/Products/Products.vue";
 import Footer from "./components/Layout/Footer/Footer.vue";
+import Review from "./components/Sections/Review/Review.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import Footer from "./components/Layout/Footer/Footer.vue";
   <About />
   <Menu />
   <Products />
+  <Review />
   <Footer />
 </template>
