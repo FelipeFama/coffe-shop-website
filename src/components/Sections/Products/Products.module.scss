@@ -1,1 +1,37 @@
 @import "../../../assets/styles/variables.scss";
+
+.products {
+  & .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    & .box {
+      text-align: center;
+      border: 1px solid $border;
+      padding: 2rem;
+      & .icons a {
+        display: inline-block;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        border: 1px solid $border;
+        color: $white;
+        margin: 0.3rem;
+        &:hover {
+          background: $main-color;
+        }
+      }
+      & .image {
+        padding: 2.5rem 0;
+        img {
+          height: 25rem;
+        }
+      }
+      & .content h3 {
+        color: $white;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

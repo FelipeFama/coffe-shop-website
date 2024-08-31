@@ -48,8 +48,8 @@ export const menuItems = [
 export const products = [
   {
     id: 1,
-    image: "images/product-1.png",
-    alt: "product1",
+    image: "/src/assets/images/product-1.png",
+    alt: "product-1",
     title: "fresh coffee",
     stars: 4.5,
     price: 15.99,
@@ -57,8 +57,8 @@ export const products = [
   },
   {
     id: 2,
-    image: "images/product-2.png",
-    alt: "product2",
+    image: "/src/assets/images/product-2.png",
+    alt: "product-2",
     title: "fresh coffee",
     stars: 4.5,
     price: 15.99,
@@ -66,8 +66,8 @@ export const products = [
   },
   {
     id: 3,
-    image: "images/product-3.png",
-    alt: "product3",
+    image: "/src/assets/images/product-3.png",
+    alt: "product-3",
     title: "fresh coffee",
     stars: 4.5,
     price: 15.99,
