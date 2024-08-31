@@ -74,3 +74,34 @@ export const products = [
     oldPrice: 20.99,
   },
 ];
+
+// utils/review.ts
+export const reviews = [
+  {
+    id: 1,
+    quoteImage: "/src/assets/images/quote.png",
+    quoteAlt: "quote",
+    image: "/src/assets/images/pic-1.png",
+    alt: "pic-1",
+    title: "jonh deo",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
+  },
+  {
+    id: 2,
+    quoteImage: "/src/assets/images/quote.png",
+    quoteAlt: "quote",
+    image: "/src/assets/images/pic-2.png",
+    alt: "pic-2",
+    title: "lara deo",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
+  },
+  {
+    id: 3,
+    quoteImage: "/src/assets/images/quote.png",
+    quoteAlt: "quote",
+    image: "/src/assets/images/pic-3.png",
+    alt: "pic-3",
+    title: "james deo",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
+  },
+];
