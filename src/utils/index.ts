@@ -43,3 +43,34 @@ export const menuItems = [
     buttonText: "add to cart",
   },
 ];
+
+// utils/products.ts
+export const products = [
+  {
+    id: 1,
+    image: "images/product-1.png",
+    alt: "product1",
+    title: "fresh coffee",
+    stars: 4.5,
+    price: 15.99,
+    oldPrice: 20.99,
+  },
+  {
+    id: 2,
+    image: "images/product-2.png",
+    alt: "product2",
+    title: "fresh coffee",
+    stars: 4.5,
+    price: 15.99,
+    oldPrice: 20.99,
+  },
+  {
+    id: 3,
+    image: "images/product-3.png",
+    alt: "product3",
+    title: "fresh coffee",
+    stars: 4.5,
+    price: 15.99,
+    oldPrice: 20.99,
+  },
+];
