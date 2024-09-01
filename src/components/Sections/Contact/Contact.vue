@@ -12,6 +12,21 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      <form action="">
+        <h3>get in touch</h3>
+        <aside class="inputBox">
+          <span><FaUserLarge /></span>
+          <input type="text" placeholder="name" />
+        </aside>
+        <aside class="inputBox">
+          <span><FaEnvelope /></span>
+          <input type="email" placeholder="email" />
+        </aside>
+        <aside class="inputBox">
+          <span><FaPhone /></span>
+          <input type="text" placeholder="number" />
+        </aside>
+      </form>
     </article>
   </section>
 </template>
