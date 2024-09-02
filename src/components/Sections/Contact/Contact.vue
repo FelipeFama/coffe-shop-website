@@ -27,6 +27,7 @@
           <span><FaPhone /></span>
           <input type="text" placeholder="number" />
         </aside>
+        <SectionButtons label="contact now" :isContact="true" />
       </form>
     </article>
   </section>
@@ -34,6 +35,7 @@
 
 <script setup lang="ts">
 import { FaUserLarge, FaEnvelope, FaPhone } from "@kalimahapps/vue-icons";
+import SectionButtons from "../../Buttons/SectionButtons/SectionButtons.vue";
 </script>
 
 <style lang="scss" scoped>
