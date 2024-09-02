@@ -6,6 +6,7 @@ import Menu from "./components/Sections/Menu/Menu.vue";
 import Products from "./components/Sections/Products/Products.vue";
 import Review from "./components/Sections/Review/Review.vue";
 import Contact from "./components/Sections/Contact/Contact.vue";
+import Blog from "./components/Sections/Blog/Blog.vue";
 import Footer from "./components/Layout/Footer/Footer.vue";
 </script>
 
@@ -17,5 +18,6 @@ import Footer from "./components/Layout/Footer/Footer.vue";
   <Products />
   <Review />
   <Contact />
+  <Blog />
   <Footer />
 </template>
