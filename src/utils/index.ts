@@ -108,3 +108,37 @@ export const reviews = [
     stars: 4.5,
   },
 ];
+
+// utils/blog.ts
+export const blogPosts = [
+  {
+    imageSrc: "/src/assets/images/blog-1.jpeg",
+    imageAlt: "blog1",
+    title: "tasty and refreshing coffee",
+    author: "admin",
+    date: "21st May, 2022",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ipsa!",
+    link: "#",
+  },
+  {
+    imageSrc: "/src/assets/images/blog-2.jpeg",
+    imageAlt: "blog2",
+    title: "tasty and refreshing coffee",
+    author: "admin",
+    date: "21st May, 2022",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ipsa!",
+    link: "#",
+  },
+  {
+    imageSrc: "/src/assets/images/blog-3.jpeg",
+    imageAlt: "blog3",
+    title: "tasty and refreshing coffee",
+    author: "admin",
+    date: "21st May, 2022",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ipsa!",
+    link: "#",
+  },
+];
