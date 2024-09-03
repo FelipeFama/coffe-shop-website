@@ -5,7 +5,7 @@
     <div class="box-container">
       <article class="box" v-for="(post, index) in blogPosts" :key="index">
         <figure class="image">
-          <img :src="post.imageSrc" :alt="post.imageAlt" />
+          <img :src="post.image" :alt="post.alt" />
         </figure>
         <aside class="content">
           <a class="title" :href="post.link">{{ post.title }}</a>

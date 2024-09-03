@@ -1,4 +1,3 @@
-// utils.ts
 export const menuItems = [
   {
     image: "/src/assets/images/menu-1.png",
@@ -44,7 +43,6 @@ export const menuItems = [
   },
 ];
 
-// utils/products.ts
 export const products = [
   {
     id: 1,
@@ -75,7 +73,6 @@ export const products = [
   },
 ];
 
-// utils/review.ts
 export const reviews = [
   {
     id: 1,
@@ -109,11 +106,10 @@ export const reviews = [
   },
 ];
 
-// utils/blog.ts
 export const blogPosts = [
   {
-    imageSrc: "/src/assets/images/blog-1.jpeg",
-    imageAlt: "blog1",
+    image: "/src/assets/images/blog-1.jpeg",
+    alt: "blog1",
     title: "tasty and refreshing coffee",
     author: "admin",
     date: "21st May, 2022",
@@ -122,8 +118,8 @@ export const blogPosts = [
     link: "#",
   },
   {
-    imageSrc: "/src/assets/images/blog-2.jpeg",
-    imageAlt: "blog2",
+    image: "/src/assets/images/blog-2.jpeg",
+    alt: "blog2",
     title: "tasty and refreshing coffee",
     author: "admin",
     date: "21st May, 2022",
@@ -132,8 +128,8 @@ export const blogPosts = [
     link: "#",
   },
   {
-    imageSrc: "/src/assets/images/blog-3.jpeg",
-    imageAlt: "blog3",
+    image: "/src/assets/images/blog-3.jpeg",
+    alt: "blog3",
     title: "tasty and refreshing coffee",
     author: "admin",
     date: "21st May, 2022",
