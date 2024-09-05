@@ -28,6 +28,12 @@ html {
     background: #fff;
     border-radius: 5rem;
   }
+  @media (max-width: 991px) {
+    font-size: 55%;
+  }
+  @media (max-width: 480px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -37,6 +43,9 @@ body {
 section,
 footer {
   padding: 2rem 7%;
+  @media (max-width: 991px) {
+    padding: 2rem;
+  }
 }
 
 .heading {
