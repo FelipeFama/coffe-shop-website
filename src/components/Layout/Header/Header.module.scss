@@ -25,4 +25,64 @@
       padding-bottom: 0.5rem;
     }
   }
+  & .icons aside {
+    color: $white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  #menu-btn {
+    display: none;
+  }
+  /* style to display the search section */
+  & .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: $white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 1.6rem;
+      color: $black;
+      padding: 1rem;
+      text-transform: none;
+    }
+    label {
+      cursor: pointer;
+      font-size: 2.2rem;
+      margin-right: 1.5rem;
+      color: $black;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  /* property to show the search form by clicking the btn */
+  & .search-form.active {
+    transform: scaleY(1);
+  }
+  /* this is the style to display the section cart */
+  & .cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: $white;
+    padding: 0 1.5rem;
+  }
+  /* property to show the container when clicked the btn */
+  & .cart-items-container.active {
+    right: 0;
+  }
 }
