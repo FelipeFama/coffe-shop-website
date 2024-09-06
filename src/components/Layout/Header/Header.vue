@@ -15,12 +15,12 @@
     </nav>
     <!-- icons for the navigation -->
     <nav class="icons">
-      <aside id="search-btn"><IoSearch /></aside>
+      <aside id="search-btn" @click="toggleSearch"><IoSearch /></aside>
       <aside id="cart-btn"><FaCartShopping /></aside>
       <aside id="menu-btn" @click="toggleNavbar"><FaBars /></aside>
     </nav>
     <!-- search section with its icon -->
-    <aside class="search-form">
+    <aside :class="['search-form', { active: isSearchFormActive }]">
       <input type="search" id="search-box" placeholder="search here..." />
       <label for="search-box">
         <IoSearch />
@@ -34,9 +34,16 @@ import { ref } from "vue";
 import { IoSearch, FaCartShopping, FaBars } from "@kalimahapps/vue-icons";
 
 const isNavbarActive = ref(false);
+const isSearchFormActive = ref(false);
 
 const toggleNavbar = () => {
   isNavbarActive.value = !isNavbarActive.value;
+  isSearchFormActive.value = false;
+};
+
+const toggleSearch = () => {
+  isSearchFormActive.value = !isSearchFormActive.value;
+  isNavbarActive.value = false;
 };
 </script>
 
