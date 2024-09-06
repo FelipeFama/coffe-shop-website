@@ -16,7 +16,7 @@
     <!-- icons for the navigation -->
     <nav class="icons">
       <aside id="search-btn" @click="toggleSearch"><IoSearch /></aside>
-      <aside id="cart-btn"><FaCartShopping /></aside>
+      <aside id="cart-btn" @click="toggleCartItem"><FaCartShopping /></aside>
       <aside id="menu-btn" @click="toggleNavbar"><FaBars /></aside>
     </nav>
     <!-- search section with its icon -->
@@ -26,24 +26,53 @@
         <IoSearch />
       </label>
     </aside>
+    <!-- cart section with its listed items -->
+    <nav :class="['cart-items-container', { active: isCartItemActive }]">
+      <aside class="cart-item" v-for="(item, index) in headerCart" :key="index">
+        <span class="fas fa-times"></span>
+        <img :src="item.image" alt="item.alt" />
+        <span><HuTimes /></span>
+        <article class="content">
+          <h3>{{ item.title }}</h3>
+          <div class="price">{{ item.price }}</div>
+        </article>
+      </aside>
+      <SectionButtons label="checkout now" />
+    </nav>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { IoSearch, FaCartShopping, FaBars } from "@kalimahapps/vue-icons";
+import { headerCart } from "@/utils";
+import {
+  IoSearch,
+  FaCartShopping,
+  FaBars,
+  HuTimes,
+} from "@kalimahapps/vue-icons";
+import SectionButtons from "../../Buttons/SectionButtons/SectionButtons.vue";
 
 const isNavbarActive = ref(false);
 const isSearchFormActive = ref(false);
+const isCartItemActive = ref(false);
 
 const toggleNavbar = () => {
   isNavbarActive.value = !isNavbarActive.value;
   isSearchFormActive.value = false;
+  isCartItemActive.value = false;
 };
 
 const toggleSearch = () => {
   isSearchFormActive.value = !isSearchFormActive.value;
   isNavbarActive.value = false;
+  isCartItemActive.value = false;
+};
+
+const toggleCartItem = () => {
+  isCartItemActive.value = !isCartItemActive.value;
+  isNavbarActive.value = false;
+  isSearchFormActive.value = false;
 };
 </script>
 
