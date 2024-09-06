@@ -74,6 +74,12 @@ const toggleCartItem = () => {
   isNavbarActive.value = false;
   isSearchFormActive.value = false;
 };
+
+window.onscroll = () => {
+  isNavbarActive.value = false;
+  isSearchFormActive.value = false;
+  isCartItemActive.value = false;
+};
 </script>
 
 <style lang="scss" scoped>
