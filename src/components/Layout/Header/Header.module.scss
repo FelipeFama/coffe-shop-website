@@ -110,6 +110,10 @@
     width: 35rem;
     background: $white;
     padding: 0 1.5rem;
+    /* property to show the container when clicked the btn */
+    &.active {
+      right: 0;
+    }
     & .cart-item {
       position: relative;
       margin: 2rem 0;
@@ -117,9 +121,5 @@
       align-items: center;
       gap: 1.5rem;
     }
-  }
-  /* property to show the container when clicked the btn */
-  & .cart-items-container.active {
-    right: 0;
   }
 }

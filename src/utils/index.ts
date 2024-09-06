@@ -1,3 +1,30 @@
+export const headerCart = [
+  {
+    image: "/src/assets/images/cart-item-1.png",
+    alt: "item-1",
+    title: "cart item 01",
+    price: "$15.99/-",
+  },
+  {
+    image: "/src/assets/images/cart-item-2.png",
+    alt: "item-2",
+    title: "cart item 02",
+    price: "$15.99/-",
+  },
+  {
+    image: "/src/assets/images/cart-item-3.png",
+    alt: "item-3",
+    title: "cart item 03",
+    price: "$15.99/-",
+  },
+  {
+    image: "/src/assets/images/cart-item-4.png",
+    alt: "item-4",
+    title: "cart item 04",
+    price: "$15.99/-",
+  },
+];
+
 export const menuItems = [
   {
     image: "/src/assets/images/menu-1.png",
