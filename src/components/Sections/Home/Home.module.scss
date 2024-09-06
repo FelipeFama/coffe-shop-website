@@ -7,12 +7,20 @@
   background: url(../../../assets/images/home-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
+  @media (max-width: 768px) {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
   & .content {
     max-width: 60rem;
     h3 {
       font-size: 6rem;
       text-transform: uppercase;
       color: $white;
+      @media (max-width: 768px) {
+        font-size: 4.5rem;
+      }
     }
     p {
       font-size: 2rem;
@@ -20,6 +28,9 @@
       line-height: 1.8;
       padding: 1rem 0;
       color: $whisper;
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
