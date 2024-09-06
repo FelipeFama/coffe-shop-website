@@ -7,7 +7,7 @@
     gap: 1.5rem;
     & .box {
       text-align: center;
-      border: 1px solid $border;
+      border: $border;
       padding: 2rem;
       & .icons a {
         display: inline-block;
@@ -15,7 +15,7 @@
         width: 5rem;
         line-height: 5rem;
         font-size: 2rem;
-        border: 1px solid $border;
+        border: $border;
         color: $white;
         margin: 0.3rem;
         &:hover {

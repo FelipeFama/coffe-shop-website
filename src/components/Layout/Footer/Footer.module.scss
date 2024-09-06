@@ -11,7 +11,7 @@
       width: 5rem;
       line-height: 5rem;
       color: $white;
-      border: 1px solid $border;
+      border: $border;
       margin: 0.3rem;
       border-radius: 50%;
       &:hover {
@@ -28,7 +28,7 @@
     a {
       padding: 0.7rem 2rem;
       color: $white;
-      border: 1px solid $border;
+      border: $border;
       font-size: 2rem;
       &:hover {
         background-color: $main-color;
