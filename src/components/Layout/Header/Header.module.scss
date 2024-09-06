@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 7%;
-  border-bottom: $border;
+  border-bottom: 1px solid $border;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,27 +15,53 @@
   & .logo img {
     height: 6rem;
   }
-  & .navbar a {
-    margin: 0 1rem;
-    font-size: 1.6rem;
-    color: $white;
-    &:hover {
-      color: $main-color;
-      border-bottom: 0.1rem solid $main-color;
-      padding-bottom: 0.5rem;
+  & .navbar {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background: $white;
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
+      &.active {
+        right: 0;
+      }
+    }
+    a {
+      margin: 0 1rem;
+      font-size: 1.6rem;
+      color: $white;
+      &:hover {
+        color: $main-color;
+        border-bottom: 0.1rem solid $main-color;
+        padding-bottom: 0.5rem;
+      }
+      @media (max-width: 768px) {
+        color: $black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
     }
   }
-  & .icons aside {
-    color: $white;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    &:hover {
-      color: $main-color;
+  & .icons {
+    display: flex;
+    aside {
+      color: $white;
+      cursor: pointer;
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      &:hover {
+        color: $main-color;
+      }
     }
   }
   #menu-btn {
     display: none;
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
   }
   /* style to display the search section */
   & .search-form {
@@ -80,6 +106,13 @@
     width: 35rem;
     background: $white;
     padding: 0 1.5rem;
+    & .cart-item {
+      position: relative;
+      margin: 2rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
   }
   /* property to show the container when clicked the btn */
   & .cart-items-container.active {
