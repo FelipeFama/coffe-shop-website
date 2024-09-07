@@ -1,24 +1,54 @@
+// importing images for headerCart
+import cartItem1 from "@/assets/images/cart-item-1.png";
+import cartItem2 from "@/assets/images/cart-item-2.png";
+import cartItem3 from "@/assets/images/cart-item-3.png";
+import cartItem4 from "@/assets/images/cart-item-4.png";
+
+// importing images for menuItems
+import menu1 from "@/assets/images/menu-1.png";
+import menu2 from "@/assets/images/menu-2.png";
+import menu3 from "@/assets/images/menu-3.png";
+import menu4 from "@/assets/images/menu-4.png";
+import menu5 from "@/assets/images/menu-5.png";
+import menu6 from "@/assets/images/menu-6.png";
+
+// importing images for products
+import product1 from "@/assets/images/product-1.png";
+import product2 from "@/assets/images/product-2.png";
+import product3 from "@/assets/images/product-3.png";
+
+// importing images for reviews
+import quoteImg from "@/assets/images/quote-img.png";
+import pic1 from "@/assets/images/pic-1.png";
+import pic2 from "@/assets/images/pic-2.png";
+import pic3 from "@/assets/images/pic-3.png";
+
+// importing images for blogPosts
+import blog1 from "@/assets/images/blog-1.jpeg";
+import blog2 from "@/assets/images/blog-2.jpeg";
+import blog3 from "@/assets/images/blog-3.jpeg";
+
 export const headerCart = [
   {
-    image: "../assets/images/cart-item-1.png",
+    image: cartItem1,
     alt: "item-1",
     title: "cart item 01",
     price: "$15.99/-",
   },
   {
-    image: "../assets/images/cart-item-2.png",
+    image: cartItem2,
     alt: "item-2",
     title: "cart item 02",
     price: "$15.99/-",
   },
   {
-    image: "../assets/images/cart-item-3.png",
+    image: cartItem3,
     alt: "item-3",
     title: "cart item 03",
     price: "$15.99/-",
   },
   {
-    image: "../assets/images/cart-item-4.png",
+    image: cartItem4,
     alt: "item-4",
     title: "cart item 04",
     price: "$15.99/-",
@@ -27,42 +57,42 @@ export const headerCart = [
 
 export const menuItems = [
   {
-    image: "../assets/images/menu-1.png",
+    image: menu1,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
     buttonText: "add to cart",
   },
   {
-    image: "../assets/images/menu-2.png",
+    image: menu2,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
     buttonText: "add to cart",
   },
   {
-    image: "../assets/images/menu-3.png",
+    image: menu3,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
     buttonText: "add to cart",
   },
   {
-    image: "../assets/images/menu-4.png",
+    image: menu4,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
     buttonText: "add to cart",
   },
   {
-    image: "../assets/images/menu-5.png",
+    image: menu5,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
     buttonText: "add to cart",
   },
   {
-    image: "../assets/images/menu-6.png",
+    image: menu6,
     title: "tasty and healthy",
     price: "$15.99",
     oldPrice: "$20.99",
@@ -73,7 +103,7 @@ export const menuItems = [
 export const products = [
   {
     id: 1,
-    image: "../assets/images/product-1.png",
+    image: product1,
     alt: "product-1",
     title: "fresh coffee",
     stars: 4.5,
@@ -82,7 +112,7 @@ export const products = [
   },
   {
     id: 2,
-    image: "../assets/images/product-2.png",
+    image: product2,
     alt: "product-2",
     title: "fresh coffee",
     stars: 4.5,
@@ -91,7 +121,7 @@ export const products = [
   },
   {
     id: 3,
-    image: "../assets/images/product-3.png",
+    image: product3,
     alt: "product-3",
     title: "fresh coffee",
     stars: 4.5,
@@ -103,9 +133,9 @@ export const products = [
 export const reviews = [
   {
     id: 1,
-    quoteImage: "../assets/images/quote-img.png",
+    quoteImage: quoteImg,
     quoteAlt: "quote",
-    image: "../assets/images/pic-1.png",
+    image: pic1,
     alt: "pic-1",
     title: "jonh deo",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
@@ -113,9 +143,9 @@ export const reviews = [
   },
   {
     id: 2,
-    quoteImage: "../assets/images/quote-img.png",
+    quoteImage: quoteImg,
     quoteAlt: "quote",
-    image: "../assets/images/pic-2.png",
+    image: pic2,
     alt: "pic-2",
     title: "lara deo",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
@@ -123,9 +153,9 @@ export const reviews = [
   },
   {
     id: 3,
-    quoteImage: "../assets/images/quote-img.png",
+    quoteImage: quoteImg,
     quoteAlt: "quote",
-    image: "../assets/images/pic-3.png",
+    image: pic3,
     alt: "pic-3",
     title: "james deo",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus sed sint, accusantium tenetur aliquid veniam maxime eos exercitationem cumque!",
@@ -135,7 +165,7 @@ export const reviews = [
 
 export const blogPosts = [
   {
-    image: "../assets/images/blog-1.jpeg",
+    image: blog1,
     alt: "blog1",
     title: "tasty and refreshing coffee",
     author: "admin",
@@ -145,7 +175,7 @@ export const blogPosts = [
     link: "#",
   },
   {
-    image: "../assets/images/blog-2.jpeg",
+    image: blog2,
     alt: "blog2",
     title: "tasty and refreshing coffee",
     author: "admin",
@@ -155,7 +185,7 @@ export const blogPosts = [
     link: "#",
   },
   {
-    image: "../assets/images/blog-3.jpeg",
+    image: blog3,
     alt: "blog3",
     title: "tasty and refreshing coffee",
     author: "admin",
