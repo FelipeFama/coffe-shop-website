@@ -5,13 +5,13 @@
     <div class="box-container">
       <article class="box" v-for="(products, index) in products" :key="index">
         <aside class="icons">
-          <a href="#">
+          <a href="#" aria-label="shopping">
             <FaCartShopping />
           </a>
-          <a href="#">
+          <a href="#" aria-label="heart">
             <FaHeart />
           </a>
-          <a href="#">
+          <a href="#" aria-label="eye">
             <FaEye />
           </a>
         </aside>
@@ -19,7 +19,7 @@
           <img :src="products.image" :alt="products.alt" />
         </figure>
         <aside class="content">
-          <h3>{{ products.title }}</h3>
+          <h2>{{ products.title }}</h2>
           <aside class="stars">
             <FaStar v-for="n in Math.floor(products.stars)" :key="n" />
             <FaStarHalfStroke v-if="products.stars % 1 !== 0" />

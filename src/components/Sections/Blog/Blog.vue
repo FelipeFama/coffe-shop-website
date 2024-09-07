@@ -8,7 +8,9 @@
           <img :src="post.image" :alt="post.alt" />
         </figure>
         <aside class="content">
-          <a class="title" :href="post.link">{{ post.title }}</a>
+          <a class="title" :href="post.link" aria-label="link">
+            {{ post.title }}
+          </a>
           <span>by {{ post.author }} / {{ post.date }}</span>
           <p>{{ post.description }}</p>
           <SectionButtons label="Read More" />

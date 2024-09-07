@@ -7,7 +7,7 @@
         <img :src="reviews.quoteImage" :alt="reviews.quoteAlt" />
         <p>{{ reviews.text }}</p>
         <img :src="reviews.image" :alt="reviews.alt" />
-        <h3>{{ reviews.title }}</h3>
+        <h2>{{ reviews.title }}</h2>
         <aside class="stars">
           <FaStar v-for="n in Math.floor(reviews.stars)" :key="n" />
           <FaStarHalfStroke v-if="reviews.stars % 1 !== 0" />

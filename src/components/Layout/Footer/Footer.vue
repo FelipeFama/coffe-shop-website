@@ -1,30 +1,30 @@
 <template>
   <footer class="footer">
     <aside class="share">
-      <a href="#">
+      <a href="#" aria-label="facebook">
         <FaBandsFacebookF />
       </a>
-      <a href="#">
+      <a href="#" aria-label="twitter">
         <FaBandsTwitter />
       </a>
-      <a href="#">
+      <a href="#" aria-label="instagram">
         <FaBandsInstagram />
       </a>
-      <a href="#">
+      <a href="#" aria-label="linkedin">
         <FaBandsLinkedin />
       </a>
-      <a href="#">
+      <a href="#" aria-label="pinterest">
         <FaBandsPinterest />
       </a>
     </aside>
     <aside class="links">
-      <a href="#">home</a>
-      <a href="#">about</a>
-      <a href="#">menu</a>
-      <a href="#">products</a>
-      <a href="#">review</a>
-      <a href="#">contact</a>
-      <a href="#">blogs</a>
+      <a href="#" aria-label="home">home</a>
+      <a href="#" aria-label="about">about</a>
+      <a href="#" aria-label="menu">menu</a>
+      <a href="#" aria-label="products">products</a>
+      <a href="#" aria-label="review">review</a>
+      <a href="#" aria-label="contact">contact</a>
+      <a href="#" aria-label="blogs">blogs</a>
     </aside>
     <aside class="credit">
       created by <span>felipe fama</span> | rights reserved for

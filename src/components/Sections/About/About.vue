@@ -7,7 +7,7 @@
         <img src="/src/assets/images/about-img.jpeg" alt="about" />
       </figure>
       <article class="content">
-        <h3>what makes our coffee special?</h3>
+        <h2>what makes our coffee special?</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, quo
           ullam? Fugit animi, omnis totam reiciendis neque voluptatibus quis

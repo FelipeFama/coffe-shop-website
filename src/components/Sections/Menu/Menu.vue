@@ -5,7 +5,7 @@
     <article class="box-container">
       <figcaption class="box" v-for="(item, index) in menuItems" :key="index">
         <img :src="item.image" :alt="`${item.title}`" />
-        <h3>{{ item.title }}</h3>
+        <h2>{{ item.title }}</h2>
         <aside class="price">
           {{ item.price }} <span>{{ item.oldPrice }}</span>
         </aside>
