@@ -1,9 +1,9 @@
 @import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
 
 .header {
   background: $bg;
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: space-between;
   padding: 1.5rem 7%;
   border-bottom: $border;
@@ -71,8 +71,7 @@
     background: $white;
     width: 50rem;
     height: 5rem;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     transform: scaleY(0);
     transform-origin: top;
     @media (max-width: 768px) {

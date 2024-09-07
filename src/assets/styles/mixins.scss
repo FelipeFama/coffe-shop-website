@@ -1,0 +1,13 @@
+@mixin flex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-standard {
+  flex: 1 1 45rem;
+}

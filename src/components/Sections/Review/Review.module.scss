@@ -1,10 +1,9 @@
 @import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
 
 .review {
   .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    @include flex-grid;
     & .box {
       border: $border;
       text-align: center;

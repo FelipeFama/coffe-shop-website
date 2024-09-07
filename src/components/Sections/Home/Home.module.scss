@@ -1,9 +1,9 @@
 @import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
 
 .home {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
+  @include flex-center;
   background: url(../../../assets/images/home-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;

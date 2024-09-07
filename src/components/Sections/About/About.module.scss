@@ -1,19 +1,19 @@
 @import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
 
 .about {
   & .row {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     background: $black;
     flex-wrap: wrap;
     & .image {
-      flex: 1 1 45rem;
+      @include flex-standard;
       img {
         width: 100%;
       }
     }
     & .content {
-      flex: 1 1 45rem;
+      @include flex-standard;
       padding: 2rem;
       h3 {
         font-size: 3rem;

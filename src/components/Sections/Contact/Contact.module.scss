@@ -1,4 +1,5 @@
 @import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
 
 .contact {
   .row {
@@ -7,12 +8,12 @@
     flex-wrap: wrap;
     gap: 1rem;
     & .map {
-      flex: 1 1 45rem;
+      @include flex-standard;
       width: 100%;
       object-fit: cover;
     }
     form {
-      flex: 1 1 45rem;
+      @include flex-standard;
       padding: 5rem 2rem;
       text-align: center;
       h3 {
@@ -21,8 +22,7 @@
         color: $white;
       }
       & .inputBox {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         margin-top: 2rem;
         margin-bottom: 2rem;
         background: $bg;
